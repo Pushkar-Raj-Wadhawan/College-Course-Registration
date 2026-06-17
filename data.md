@@ -1,0 +1,14 @@
+1 CSE
+        1 ITP
+        2 OOP
+        3 DBMS
+
+2 AI
+        1 ML
+        2 DL
+        3 RL
+
+3 EE
+        1 BEE
+        2 VLSI
+        3 CM
