@@ -67,33 +67,40 @@ void Department::addCourseToDept(string crsName) {
     courses++;
 }
 
-void Department::addProfToDept(string profName) {
-    Professor* prof = new Professor(profName, id);
-    professors++;
-}
 
 
 
 class Professor {
 public:
     string name;
+    int id;
+    static unordered_map<int, int> profID;
+    static map<pair<int, int>, Professor*> profByID;
 
 
-
-    Professor(string profName, int deptId) {
-
+    Professor(string profName, int deptID) {
+        name = profName;
+        id = ++profID[deptID];
+        profByID[{deptID,id}] = this;
     }
 };
 
+unordered_map<int,int> Professor::profID;
+map<pair<int, int>, Professor*> Professor::profByID;
+    
 
+void Department::addProfToDept(string profName) {
+    Professor* prof = new Professor(profName, id);
+    professors++;
+}
 
 class Student {
     
 };
-
-
-
-void printData() {
+    
+    
+    
+    void printData() {
     for(int i = 1; i <= Department::departments; i++) {
         Department* dept = Department::deptById[i];
         cout << i << " " << dept->name << "\n";
@@ -124,4 +131,8 @@ int main() {
 
     printData();
 
+    CS.addProfToDept("Jonathan");
+    CS.addProfToDept("Toto Wolff");
+    EE.addProfToDept("Zak Brown");
+    
 }
