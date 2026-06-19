@@ -1,0 +1,22 @@
+day1
+
+1. Creating a department
+2. dept accessible via id
+3. creating a course
+4. crs accessible via dept id and crs id
+5. printing all data yet created
+
+day 2
+
+1. assigning prof to dept
+2. prof accessible via dept id and prof id
+
+
+next up
+
+1. assigning timing slot to course (char) (like P, Q etc)
+2. assigning course slots to professors and keeping in check no prof have clashing slot
+
+
+
+
