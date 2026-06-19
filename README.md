@@ -24,4 +24,4 @@ A simple LLD (Low-Level Design) project in C++ to practice OOP by modeling a col
 - Add grades and a GPA calculator
 - Persist data to a file or simple database
 
-Personal Project Built by @Pushkar-Raj-Wadhawan
+Personal Project Built by Pushkar-Raj-Wadhawan[https://github.com/Pushkar-Raj-Wadhawan]
